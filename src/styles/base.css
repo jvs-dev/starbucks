@@ -1,0 +1,18 @@
+:root {
+    --green: #006241;
+    --light-green: #00AF74;
+    --balck: #1e1e1e;
+    --white: #fff;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}

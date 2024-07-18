@@ -1,12 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starbucks</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/StarBucksLogo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/components/loadingSection/loadingSection.css">
+  <link rel="stylesheet" href="src/components/loader/loader.css">
+  <link rel="stylesheet" href="src/components/header/header.css">
+  <link rel="stylesheet" href="src/components/mainBackground/mainBackground.css">
+  <link rel="stylesheet" href="src/components/main/main.css">
+  <link rel="stylesheet" href="src/components/footer/footer.css">
+  <title>Starbucks</title>
+</head>
+
+<body>
+  <section class="loadingSection" id="loadingSection">
+    <img class="loadingSection__logo" src="src/assets/StarBucksLogo.svg" alt="Logo">
+    <div class="loader"></div>
+  </section>
+  <section class="menuSection" id="menuSection">
     
-  </body>
+  </section>
+  <main id="main">
+    <img class="main__backgroundImage" src="src/assets/pexels-igor-haritanovich-814387-1695052.jpg" alt="">
+    <div class="main__backgroundGradient"></div>
+    <header class="main__header">
+      <div class="header__div">
+        <img class="header__logo" src="src/assets/StarBucksLogo.svg" alt="Logo">
+        <a class="header__logoName" href="">Starbucks</a>
+      </div>
+      <div class="header__menuToggle" id="menuToggle"></div>
+    </header>
+    <div class="main__div--1">
+      <div class="main__div--2">
+        <h1 class="main__h1" id="recipeTitle">Caffé Mocha</h1>
+        <p class="main__p" id="recipeText">Um pouco de chantilly e uma pitada de raspas de chocolate são os elementos
+          deste clássico
+          Starbucks® rico em chocolate.</p>
+        <button class="main__seeMore" id="seeMoreBtn"><a href="#">Ver Receita</a></button>
+      </div>
+      <div class="main__div--3">
+        <div class="main__div--4">
+          <img class="main__image active" src="src/assets/coffee1.svg" alt="">
+          <img class="main__image" src="src/assets/coffee2.svg" alt="">
+          <img class="main__image" src="src/assets/coffee3.svg" alt="">
+          <img class="main__image" src="src/assets/coffee4.svg" alt="">
+        </div>
+        <div class="main__div--5">
+          <button class="main__button--1" id="previousImage"><ion-icon name="arrow-back-outline"></ion-icon></button>
+          <button class="main__button--2" id="nextImage"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+        </div>
+      </div>
+    </div>
+    <footer class="main__footer">
+      <ul class="footer__ul">
+        <li class="footer__li"><a class="footer__a" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li class="footer__li"><a class="footer__a" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li class="footer__li"><a class="footer__a" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
+    </footer>
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="src/script/main.js"></script>
+</body>
+
 </html>

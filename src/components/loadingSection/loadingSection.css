@@ -1,0 +1,37 @@
+.loadingSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background: var(--green);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.loadingSection__logo {
+    height: 150px;
+}
+
+.loadingSection.desative {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 20px 40px;
+    padding: 0px;
+    gap: 0px;        
+}
+
+.loadingSection.desative .loadingSection__logo {
+    height: 50px;
+}
+
+.loadingSection.desative .loader {
+    display: none;
+}
